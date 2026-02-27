@@ -1055,13 +1055,13 @@ function Footer() {
             </p>
             <div className="flex gap-3 flex-wrap">
               {[
-                { icon: Facebook, label: "Facebook", testid: "link-facebook" },
-                { icon: Instagram, label: "Instagram", testid: "link-instagram" },
-                { icon: Twitter, label: "Twitter", testid: "link-twitter" },
-              ].map(({ icon: Icon, label, testid }) => (
+                { icon: Facebook, label: "Facebook", testid: "link-facebook", url: "https://www.facebook.com/share/1BCP7uvvq5/?mibextid=wwXIfr" },
+                { icon: Instagram, label: "Instagram", testid: "link-instagram", url: "https://www.instagram.com/saomee75_2005?igsh=MTJ4ejVsdTJrdmNrOQ==" },
+              ].map(({ icon: Icon, label, testid, url }) => (
                 <a
                   key={label}
-                  href="#"
+                  target="_blank"
+                  href={url}
                   aria-label={label}
                   data-testid={testid}
                   className="w-9 h-9 rounded-md bg-background/10 flex items-center justify-center hover-elevate"
